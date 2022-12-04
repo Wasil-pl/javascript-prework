@@ -2,18 +2,36 @@
 <html lang="pl">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Vollkorn:ital@1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons">
-			<button id="play-rock" type="button">Kamień</button>
-			<button id="play-paper" type="button">Papier</button>
-			<button id="play-scissors" type="button">Nożyce</button>
+	<section class="game">
+		<div class="container">
+			<h1>- Gra Kamień, nożyce, papier -</h1>
+			<div class="game-rules">
+				Gra składa się z kolejnych tur. W każdej turze gracz wybiera i naciska symbol papieru, kamienia lub nożyc. Wygrywa ten kto wybrał silniejszy symbol. W przypadku pokazania dwóch takich samych symboli następuje remis. Oto hierarchia symboli:
+				<ul>
+					<li>nożyce są silniejsze od papieru, ponieważ go tną,</li>
+					<li>kamień jest silniejszy od nożyc, ponieważ je tępi,</li>
+					<li>papier jest silniejszy od kamienia, ponieważ go owija.</li>
+				</ul>
+			</div>
+			<div class="buttons" id="buttons">
+				<h2>Wybierz symbol</h2>
+				<i id="play-rock" class="fa-regular fa-hand-back-fist"></i>
+				<i id="play-paper" class="fa-regular fa-hand"></i>
+				<i id="play-scissors" class="fa-regular fa-hand-scissors"></i>
+			</div>
+			<div class="messages" id="messages"></div>
+			<div class="results" id="results"></div>
 		</div>
-		<div id="messages"></div>
-	</div>
+	</section>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>

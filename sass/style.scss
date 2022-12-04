@@ -1,0 +1,75 @@
+/* Variables */
+
+$color-background: #f7f7f5;
+$color-background-container: #fff;
+$color-font-h1: #6d9f80;
+$color-font-light: #fff;
+$font-text: 'Raleway', sans-serif;
+$font-h1: 'Vollkorn', serif;
+
+
+/* Global */
+
+body {
+    background: $color-background;
+    margin: 0;
+    text-align: center;
+    font-family: $font-text;
+
+    .container {
+        width: 700px;
+        margin: auto;
+    }
+}
+
+
+/* Game */
+
+.game {
+
+    .container {
+        background: $color-background-container;
+        border-radius: 20px;
+        padding: 20px;
+
+        h1, h2 {
+            font-size: 36px;
+            color: $color-font-h1;
+            font-family: $font-h1;
+        }
+
+        .game-rules {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+
+            ul {
+                display: inline-block;
+            }
+        }
+
+        .buttons {
+
+            h2 {
+                margin-top: 40px;
+                font-size: 26px;
+            }
+
+            i {
+                font-size: 40px;
+                border-radius: 50%;
+                background: $color-font-h1;
+                height: 70px;
+                width: 70px;
+                line-height: 70px;
+                color: $color-font-light;
+                margin: 20px 15px;
+                cursor: pointer;
+            }
+        }
+
+        .messages {
+            margin-top: 20px;
+        }
+    }
+}
