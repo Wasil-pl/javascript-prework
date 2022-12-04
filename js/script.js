@@ -108,7 +108,7 @@ if(playerInput == '3'){
 
 printMessage('Twój ruch to: ' + playerMove);
 
-displayResult(playerMove, computerMove);
+displayResult(computerMove, playerMove);
 
 /*
 if(computerMove == 'kamień' && playerMove == 'nożyce'){
